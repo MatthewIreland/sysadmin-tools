@@ -4,35 +4,41 @@
 # This script must be run as root (or sudo)!
 # Be sure to run the postinstallation setup script (./mysqlsetup.sh) after installing!
 
+# save current working directory (to restore later)
+original_working_directory=${PWD}
+
+# no need to run as root for the first part
+# su mti20
+
 # replace the following with the latest versions
-mysql_latest_version="mysql-5.6.12-linux-glibc2.5-i686"
+mysql_latest_version="mysql-5.6.12"
 mysql_url="http://dev.mysql.com/get/Downloads/MySQL-5.6/${mysql_latest_version}.tar.gz/from/http://cdn.mysql.com/"
 
 # configure the following as desired
 install_directory="/usr/local/mysql/"
 
-# save current working directory (to restore later)
-original_working_directory=${PWD}
-
-# download apache source
+# download mysql source
 cd
 if [ ! -d "downloads/" ]; then
     mkdir downloads
 fi
 cd downloads
-echo "Downloading MySQL"
-#wget -q -t10 "$mysql_url"
-wget -v -t10 "$mysql_url"
+echo "Downloading MySQL (follow instructions in lynx, quit when file is saved)"
+#lynx "$mysql_url"
 
 # extract source
 echo "Extracting"
-tar zxvf "${mysql_latest_version}.tar.gz" >/dev/null
-cd "$mysql_latest_version"
+#tar zxvf "${mysql_latest_version}.tar.gz" >/dev/null
+cd $mysql_latest_version
+
+pwd
+
+# now need to be root
+# exit
 
 # add group + system user
-groupadd mysql
-useradd -r -g mysql mysql
-
+#groupadd mysql
+#useradd -r -g mysql mysql
 
 # use cmake to process platform/compiler independent configuration files
 echo "Configuring"

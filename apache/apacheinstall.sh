@@ -49,7 +49,8 @@ echo "Configuring"
 cd ${apache_latest_version}
 ./configure --prefix="${install_directory}" --with-included-apr --enable-userdir --with-pcre=/usr/local/pcre/bin/pcre-config #>/dev/null
 if [ $? -ne 0 ]; then
-    exit
+    exit 1
+    echo "Configuration failed!"
 fi
 
 # now need to be root
@@ -59,14 +60,16 @@ fi
 echo "Building"
 make #>/dev/null
 if [ $? -ne 0 ]; then
-    exit
+    exit 2
+    echo "Build failed!"
 fi
 
 # install
 echo "Installing"
 make install #>/dev/null
 if [ $? -ne 0 ]; then
-    exit
+    exit 3
+    echo "Install failed!"
 fi
 
 echo "Done :-)"

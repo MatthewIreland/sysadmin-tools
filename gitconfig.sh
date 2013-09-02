@@ -1,6 +1,6 @@
 git config --global user.name "Matthew Ireland"                 # writes to /.gitconfig, rather than .git/config.
                                                                 # alternatively use --system to write to $(prefix)/etc/gitconfig
-git config --global user.email "matthew@ireland.me"
+git config --global user.email "matthew@mti.me.uk"
 
 git config --global credential.helper 'cache'                   # avoid having to type in credentials for github every push/pull
 git config --global credential.helper 'cache --timeout=100000'  # max value for timeout (seconds)

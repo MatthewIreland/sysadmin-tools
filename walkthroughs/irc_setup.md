@@ -3,6 +3,8 @@ IRC setup
 
 Setting up persistent IRC connection using irssi and screen.
 
+This is **not** intended as a general introduction to IRC. A lot of the below probably won't make sense if you haven't connected to an IRC network at least once before. Reading material from the References section towards the bottom of this page is highly recommended if you've never played with IRC before. Not understanding what's going on can be potentially dangerous for you, as well as meaning that you may unintentionally appear rude to other users of IRC.
+
 Step-by-step quickstart guide
 -----------------------------
 
@@ -50,7 +52,7 @@ From the GNU screen manual (http://www.gnu.org/software/screen/manual/screen.htm
         -D -r
             Reattach a session. If necessary detach and logout remotely first. 
         -D -R
-            Attach here and now. In detail this means: If a session is running, then reattach. If necessary detach and logout remotely first. If it was not running create it and notify the user. This is the author's favorite. 
+            Attach here and now. In detail this means: If a session is running, then reattach. If necessary detach and logout remotely first. If it was not running create it and notify the user. This is the author's favourite. 
         -D -RR
             Attach here and now. Whatever that means, just do it.
 Note: It is a good idea to check the status of your sessions with screen -list before using this option. 
@@ -109,9 +111,9 @@ Default is "leaving," mine is "Scotty, beam me up!" (which is actually the close
 ```
 Move around windows until you get them in an order that you like (first go to the window that you wish to move):
 ```
-/wm <postion to move to>
+/wm <position to move to>
 <or>
-/window move <postion to move to>
+/window move <position to move to>
 ```
 
 15) Save settings and layout:
@@ -184,7 +186,7 @@ References
 
 Pointers
 --------
-* Note, on MACs the Alt key is not my default set up to send an escape. Either use the escape key instead or check the "Use option key as meta key" in "Preferences" (10.5/10.6) or "Window Settings" (10.4) in the Terminal Menu.
+* Note, on Macs the Alt key is not my default set up to send an escape. Either use the escape key instead or check the "Use option key as meta key" in "Preferences" (10.5/10.6) or "Window Settings" (10.4) in the Terminal Menu.
 * Whilst nick, server names, networks names, etc are case sensitive, commands are not, so <pre>/NETWORK</pre> is precisely equivalent to <pre>/network</pre>.
 
 Disclaimer

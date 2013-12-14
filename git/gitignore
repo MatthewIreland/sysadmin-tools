@@ -1,0 +1,61 @@
+# Template .gitignore file
+# Matthew Ireland, 14 Dec MMXIII
+# Remove irrelevant sections to avoid clutter
+# There may exist duplicate entries, so that whole sections can
+# safely be removed.
+# Build should still be cleaned before committing.
+# When copying, remember to insert . before filename.
+
+# Emacs & equivalents #
+#######################
+*~
+
+# Duplicates #
+##############
+*.bak
+
+# C #
+#####
+*.o
+*.so
+*.out
+
+# Windows #
+###########
+*.com
+*.dll
+*.exe
+
+# Java #
+########
+*.class
+*.jar    # Care needed!
+
+# LaTeX (pure) #
+################
+*.log
+*.aux
+*-eps-converted-to.pdf
+
+# LaTeX (BibTeX) #
+##################
+*.bib
+*.bbl
+*.blg
+
+# LaTeX (beamer) #
+##################
+*.out
+*.snm
+*.toc
+*.nav
+
+# Packages #
+############
+*.tar
+*.gz
+*.zip
+*.iso
+*.rar
+*.7z
+*.dmg

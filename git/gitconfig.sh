@@ -5,7 +5,7 @@ git config --global user.email "matthew@mti.me.uk"
 git config --global credential.helper 'cache'                   # avoid having to type in credentials for github every push/pull
 git config --global credential.helper 'cache --timeout=100000'  # max value for timeout (seconds)
 
-git config --global core.editor "emacs --no-window-mode"
+git config --global core.editor "emacs -Q --no-window-system"
 
 git config --global help.autocorrect 1                          # if set to 1, git will automatically run the command if it has only one match (e.g. git com -> git commit)
 

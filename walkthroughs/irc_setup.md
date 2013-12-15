@@ -163,6 +163,14 @@ Alternative, but less elegant way, is to just close the window:
 ```
 /topic
 ```
+* Switch between networks:
+```
+Ctrl+X
+```
+* List channels known to irssi:
+```
+/CHANNEL LIST
+```
 
 Useful commands (screen)
 ------------------------

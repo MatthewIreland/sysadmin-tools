@@ -1,0 +1,9 @@
+#!/bin/bash
+
+del_path="/tmp/${USER}_deleted/$(date +%Y_%m_%d_%H_%M_%S)"
+mkdir -p "$del_path" &> /dev/null
+
+while [ ! -z "$1" ]; do
+      mv "$1" "$del_path"
+      shift
+done

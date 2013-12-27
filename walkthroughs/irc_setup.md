@@ -172,6 +172,31 @@ Ctrl+X
 /CHANNEL LIST
 ```
 
+Joins/Parts
+-----------
+
+A number of useful things can be done here.
+
+If you are in relatively few channels that have problems with people joining/leaving frequently, then just ignore for that channel:
+
+```
+/ignore #<channel> MODES JOINS PARTS QUITS
+/ignore -except -pattern <yourNick> #<channel>
+```
+
+Replace #<channel> with the wildcard operator (*) to do this for all channels.
+
+An alternative way for doing this for all channels is to add the following to ~/.irssi/conf:
+
+```
+#
+ignores = ( { level = "JOINS PARTS QUITS"; } );
+```
+
+For a more in depth discussion of levels, and how to put all join/part/quit messages into their own "junk" window (freeing up other windows for disucssion), see https://pthree.org/2010/03/12/irssi-handling-joinspartsquits/
+
+
+
 Useful commands (screen)
 ------------------------
 * <pre>ctrl+a x</pre> locks screen.

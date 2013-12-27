@@ -171,6 +171,11 @@ Ctrl+X
 ```
 /CHANNEL LIST
 ```
+* Reload configuration:
+```
+/RELOAD
+/RELOAD <filename>   # for loading a different config file
+```
 
 Joins/Parts
 -----------

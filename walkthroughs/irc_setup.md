@@ -151,9 +151,13 @@ Useful commands (irssi)
 <or>
 /part <message>
 ```
-Alternative, but less elegant way, is to just close the window:
+An alternative, but less elegant way, is to just close the window. This method is needed if it is a split or hidden (e.g. for closing a query window):
 ```
 /wc
+```
+or, in full,
+```
+/WINDOW CLOSE
 ```
 * List all channels on IRC server that are public to join (**not** good for large networks):
 ```

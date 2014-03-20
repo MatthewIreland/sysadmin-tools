@@ -180,6 +180,39 @@ Ctrl+X
 /RELOAD
 /RELOAD <filename>   # for loading a different config file
 ```
+* List users in the current channel:
+```
+/names
+/n
+```
+* Display user information for a given \<nick\>:
+```
+/whois
+/wi
+```
+
+Channel Operator Commands
+-------------------------
+* Make another user, \<nick\>, a channel op:
+```
+/op <nick>
+```
+* Change channel topic:
+```
+/topic
+/t
+```
+* Set or list bans for a channel (the following three commands are indeed all aliases):
+```
+/ban
+/bans
+/b
+```
+* Kick or kickban a user:
+```
+/kick (/k)
+/kickban (/kb)
+```
 
 Joins/Parts
 -----------

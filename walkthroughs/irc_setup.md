@@ -32,7 +32,7 @@ ready for later.
 ```
 screen -list
 ```
-and do something sensible if there's already a screen session.
+If there's more than one screen session, you'll have to enter its name at the end of the next command in Step 5.
 
 5)
 ```
@@ -82,7 +82,7 @@ $ irssi
 /SET timestamp_format %d.%H:%M:%S
 ```
 
-10) Set up logging (if you're so inclined):
+10) Set up logging. Logging is useful because the IRC connection is not persistent over system restarts (logging will allow you to see any messages you missed between the last time you checked IRC and the time the system restarted). It's also useful if you're receiving e.g. tech support, so you have a record of any instructions you were given!
 ```
 /SET autolog ON
 /SET autolog_level ALL -CRAP -CLIENTCRAP -CTCPS
@@ -241,6 +241,8 @@ For a more in depth discussion of levels, and how to put all join/part/quit mess
 
 Useful commands (screen)
 ------------------------
+Screen is an incredibly useful tool for keeping any process (not just IRC) running after you terminate an ssh section. There are lots of useful commands listed in the screen manual, and a few are listed below http://www.gnu.org/software/screen/manual/screen.html
+
 * <pre>ctrl+a x</pre> locks screen.
 * <pre>ctrl+a c</pre> creates a new window.
 * <pre>ctrl+a n</pre> switches to the next window. 
